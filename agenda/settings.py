@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2=w8i$fbq5(5sfr92&lb9ma)$+%hw&zmhobs7w&p2pwpj)1ybs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+#False
+#True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+#*
+#
 
 
 # Application definition
@@ -104,15 +108,17 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+LANGUAGE_CODE = 'pt-br'
+#pt-br
+#en-us
+TIME_ZONE = 'America/Sao_Paulo'
+#America/Sao_Paulo
+#en-us
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
